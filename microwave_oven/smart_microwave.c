@@ -5,12 +5,7 @@
  * An embedded C application for a smart microwave oven simulator
  * using a keypad, 16x2 LCD, 7-segment display, stepper motor
  * (turntable), DAC (audio), and pqiv-based monitor animation.
- *
- * Architecture is deliberately mirrored on snack_dispenser.c
- * (same port-mapping pattern, keypad scan, LCD driver, pqiv ring
- * buffer, non-blocking animation engine, DAC square-wave beeps)
- * so both projects share one common hardware-abstraction style.
- *
+
  * HARDWARE-DRIVEN ADAPTATIONS FROM THE ORIGINAL SPEC:
  * The keypad only exposes 12 keys: 0-9, A, B (same ScanTable as
  * the snack dispenser). There is no physical C/D key and the scan
